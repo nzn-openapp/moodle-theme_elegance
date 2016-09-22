@@ -1,58 +1,7 @@
-@media (min-width: 768px) {
-    #region-main.col-sm-push-3 {
-        .dir-rtl & {
-            //right: 25%;
-            right:0;
-            left: auto;
-        }
-    }
-
-    #block-region-side-post.col-sm-pull-9 {
-        .dir-rtl & {
-            //left: 75%;
-            left:0;
-            right: auto;
-        }
-    }
-}
-
 .dir-rtl {
-    // Course in edit mode.
-    .editing .section .activity .contentwithoutlink,
-    .editing .section .activity .activityinstance {padding:0;}
-    .section .activity .editing_move {right:0;left:auto;}
-
     // Side blocks & Main content layout.
     ul.nav.pull-left.usermenu.loggedin > li > a {direction: ltr;}
     ul.nav.pull-left.usermenu.loggedin > li > ul > li {text-align: right;}
-
-    // Course activities.
-    .section .activity .activityinstance,
-    .section .activity .activityinstance div {display: inline-table;}
-    .section .label {text-align: right;}
-
-    // Course in edit mode.
-      .section .activity .editing_move {left:0;right:auto;}
-    // Edit menu.
-       .moodle-actionmenu[data-enhanced].show .menu>li>a {text-align: right;}
-    .section .activity .actions {
-        left: 25px;
-        right:auto;
-    }
-
-    // Blocks.
-    .block .content .list li.listentry div a {display: inline-table;}
-
     // File picker.
     .fp-fileinfo .fp-dimensions .fp-value {direction: ltr;}
-
-    // Enroll user into a course.
-    .user-enroller-panel .uep-search-results .user .picture {float: right;}
-
-    // Activity chooser.
-    &.jsenabled .choosercontainer #chooseform .instruction,
-    &.jsenabled .choosercontainer #chooseform .typesummary {
-        left: 0;
-        right: 20.3em;
-    }
 }

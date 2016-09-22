@@ -54,9 +54,9 @@ $hasfrontpagecontent = (!empty($PAGE->layout_options['hasfrontpagecontent']));
 
 
 if ($transparentmain) {
-    $mainclass = 'm-t-30';
+    $mainclass = 'm-t-30 clearfix';
 } else {
-    $mainclass = 'eboxshadow bg-white p-20';
+    $mainclass = 'eboxshadow bg-white p-20 clearfix';
 }
 
 $knownregionpost = $PAGE->blocks->is_known_region('side-post');
