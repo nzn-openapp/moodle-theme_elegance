@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     overflow: auto;
     font-size: 18px;
     line-height: 24px;
@@ -12,9 +12,13 @@
     .eboxshadow;
 
     .carousel-inner {
-        height: 250px;
+        /* height: 250px; */
         .item {
-            height: 250px;
+            /* height: 250px; */
+            padding-top: 18.116%; /* this will retain a ration of 1400:250 for the banner in all resolutions */
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
         }
     }
 
@@ -88,6 +92,17 @@
         filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
     }
         
+
+    .carousel-indicators {
+        margin-bottom: 0;
+		bottom: 1.4vw;
+    }
+
+	@media screen and (min-width: 768px) {
+		.carousel-indicators {
+			bottom: 20px;
+		}
+	}
 
     .carousel-indicators li {
         display: inline-block;
