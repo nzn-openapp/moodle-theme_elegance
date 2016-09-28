@@ -335,11 +335,13 @@ content: "\e079";
 	#add_button, #remove_button, #add_all, #remove_all{
 		line-height: 5px;
 		padding: 9px 0;
+		margin: 0 5px 3px;
+		
+		.dir-rtl&{
+			width: 130px;
+		}
 	}
 	
-	.dir-rtl& #add_all{
-		font-size: 11px;
-	}
 	
 	#fitem_id_selectors > .fitemtitle:first-child{
 		width: 3%;
@@ -347,5 +349,6 @@ content: "\e079";
 	
 	fieldset.hidden>div{
 		min-width: 0;
+		text-align: right;
 	}
 }
